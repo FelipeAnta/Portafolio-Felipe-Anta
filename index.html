@@ -6,9 +6,6 @@
 
         <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
         
-        <!--==================== SWIPER CSS ====================-->
-        <link rel="stylesheet" href="">
-        
         <!--==================== CSS ====================-->
         <link rel="stylesheet" href="/assets/css/styles.css">
 
@@ -18,11 +15,11 @@
         <!--==================== HEADER ====================-->
         <header class="header" id="header">
             <nav class="nav container">
-                <a href="" class="nav_logo">Felipe Anta</a>
+                <a href="" class="nav__logo">Felipe Anta</a>
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list grid">
-                        <li class="nav_item">
-                            <a href="#home" class="nav__link">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">
                                 <i class="uil uil-estate nav__icon"></i>Home
                             </a>
                         </li>
@@ -55,7 +52,10 @@
                     <i class="uil uil-times nav__close" id="nav-close"></i>
                 </div>
 
-                <div class="nav_btns">
+                <div class="nav__btns">
+                    <!--Theme change button-->
+                    <i class="uil uil-moon change-theme" id="theme-button"></i>
+
                     <div class="nav__toggle" id="nav-toggle">
                         <i class="uil uil-apps"></i>
                     </div>
@@ -77,6 +77,10 @@
                             <a href="https://github.com/FelipeAnta" target= "_blank" class="home__social-icon">
                                 <i class="uil uil-github-alt"></i>
                             </a>
+
+                            <a href="https://www.instagram.com/feli.anta/" target= "_blank" class="home__social-icon">
+                                <i class="uil uil-instagram"></i>
+                            </a>
                         </div>
                         <div class="home__img">
                             <svg class= "home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -97,7 +101,7 @@
                         </div>
 
                         <div class="home__data">
-                            <h1 class="home__title">Hi,I'am Felipe</h1>
+                            <h1 class="home__title">Hi, I'am Felipe</h1>
                             <h3 class="home__subtitle">Frontend developer</h3>
                             <p class="home__description">High level experience in web desing and development knowlege, producing quality work.</p>
                             <a href="#contact" class="button button--flex">
@@ -265,11 +269,11 @@
                             <div class="skills__list grid">
                                 <div class="skills__data">
                                     <div class="skills__titles">
-                                        <h3 class="skills__name">Figma</h3>
-                                        <span class="skills__number">50%</span>
+                                        <h3 class="skills__name">Lightroom</h3>
+                                        <span class="skills__number">90%</span>
                                     </div>
                                     <div class="skills__bar">
-                                        <span class="skills__percentage skills__figma"></span>
+                                        <span class="skills__percentage skills__lightroom"></span>
                                     </div>
                                 </div>
                                 <div class="skills__data">
@@ -283,13 +287,13 @@
                                 </div>
                                 <div class="skills__data">
                                     <div class="skills__titles">
-                                        <h3 class="skills__name">Lightroom</h3>
-                                        <span class="skills__number">90%</span>
+                                        <h3 class="skills__name">Figma</h3>
+                                        <span class="skills__number">50%</span>
                                     </div>
                                     <div class="skills__bar">
-                                        <span class="skills__percentage skills__lightroom"></span>
+                                        <span class="skills__percentage skills__figma"></span>
                                     </div>
-                                </div>
+                                </div> 
                             </div>
                         </div>
                     </div>
@@ -322,11 +326,14 @@
                             <div class="qualification__data">
                                 
                                 <div>
-                                    <h3 class="qualification__title">React</h3>
+                                    <div class="qualification__title-items">
+                                        <h3 class="qualification__title">Frontend Developer</h3>
+                                        <img src="/assets/img/coderlogo.png" alt="" class="img__education">
+                                    </div>
                                     <span class="qualification__subtitle">Coder House - Course</span>
                                     <div class="qualification__calendar">
                                         <i class="uil uil-calendar-alt"></i>
-                                        2022 Mar - Currently
+                                        2022 Aug - Currently
                                     </div>
                                 </div>
                                 
@@ -346,11 +353,14 @@
                                 </div>
 
                                 <div>
-                                    <h3 class="qualification__title">Technical Software Developer</h3>
-                                    <span class="qualification__subtitle">Argentina - University UADE</span>
+                                    <div class="qualification__title-items">
+                                        <h3 class="qualification__title">React</h3>
+                                        <img src="/assets/img/coderlogo.png" alt="" class="img__education">
+                                    </div>
+                                    <span class="qualification__subtitle">Coder House - Course</span>
                                     <div class="qualification__calendar">
                                         <i class="uil uil-calendar-alt"></i>
-                                        2021 - Currently
+                                        2023 Mar - Currently
                                     </div>
                                 </div>
 
@@ -360,17 +370,15 @@
                             <div class="qualification__data">
                                
                                 <div>
-                                    <h3 class="qualification__title">Web Development</h3>
-                                    <span class="qualification__subtitle">Coder House - Course</span>
+                                    <div class="qualification__title-items">
+                                        <h3 class="qualification__title">Technical Software Developer</h3>
+                                        <img src="/assets/img/uadelogo.jpg" alt="" class="img__education">
+                                    </div>
+                                    <span class="qualification__subtitle">Argentina - University UADE</span>
                                     <div class="qualification__calendar">
                                         <i class="uil uil-calendar-alt"></i>
-                                        2022 Aug - 2022 Oct
-                                    </div>
-                                    <div class="about__buttons_small">
-                                        <a download="" href="assets/pdf/DesarrolloWeb.png" class="button_small button-flex">
-                                            Certificate<i class="uil uil-download-alt button__icon"></i>
-                                        </a>
-                                    </div>
+                                        2021 - Currently
+                                    </div> 
                                 </div>
 
                                 <div>
@@ -386,10 +394,14 @@
 
                                 <div>
                                     <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
                                 </div>
 
                                 <div>
-                                    <h3 class="qualification__title">JavaScript</h3>
+                                    <div class="qualification__title-items">
+                                        <h3 class="qualification__title">JavaScript</h3>
+                                        <img src="/assets/img/coderlogo.png" alt="" class="img__education">
+                                    </div>
                                     <span class="qualification__subtitle">Coder House - Course</span>
                                     <div class="qualification__calendar">
                                         <i class="uil uil-calendar-alt"></i>
@@ -403,7 +415,33 @@
                                 </div>
 
                             </div>
+                            
+                            <!--==================== QUALIFICATION 5 ====================-->
+                            <div class="qualification__data">
+                               
+                                <div>
+                                    <div class="qualification__title-items">
+                                        <h3 class="qualification__title">Web Development</h3>
+                                        <img src="/assets/img/coderlogo.png" alt="" class="img__education">
+                                    </div>
+                                    <span class="qualification__subtitle">Coder House - Course</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        2022 Aug - 2022 Oct
+                                    </div>
+                                    <div class="about__buttons_small">
+                                        <a download="" href="assets/pdf/DesarrolloWeb.png" class="button_small button-flex">
+                                            Certificate<i class="uil uil-download-alt button__icon"></i>
+                                        </a>
+                                    </div>
+                                </div>
 
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    
+                                </div>
+
+                            </div>
                             
                         </div>
                         <!--==================== QUALIFICATION CONTENT 2 ====================-->
@@ -481,42 +519,48 @@
                 <div class="portfolio__container container">
                     <div>
                         <!--==================== PORTFOLIO 1 ====================-->
-                        <div class="portfolio__content grid">
-                            <img src="assets/img/portfolio11.jpg.png" alt="portfolio__img" class="portfolio__img">
-
-                            <div class="portfolio__data">
-                                <h3 class="portfolio__title">Modern Wbsite</h3>
-                                <p class="portfolio__description">Website adaptable to all devices, with ui components and animated interaction</p>
-                                <a href="#" class="button button--flex button--small portfolio__button">
-                                    Demo
-                                    <i class="uil uil-arrow-right button__icon"></i>
-                                </a>
+                        <div class="card">
+                            <div class="portfolio__content grid">
+                                <img src="assets/img/portfolio11.jpg.png" alt="portfolio__img" class="portfolio__img">
+    
+                                <div class="portfolio__data">
+                                    <h3 class="portfolio__title">HZAU Website</h3>
+                                    <p class="portfolio__description">Website adaptable to all devices, with ui components and animated interaction, design for a PVC windows and doors company.</p>
+                                    <a href="https://github.com/FelipeAnta/HZAU-Website" class="button button--flex button--small portfolio__button">
+                                        Demo
+                                        <i class="uil uil-arrow-right button__icon"></i>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                         <!--==================== PORTFOLIO 2 ====================-->
-                        <div class="portfolio__content grid">
-                            <img src="assets/img/portfolio22.jpg.png" alt="portfolio__img" class="portfolio__img">
-
-                            <div class="portfolio__data">
-                                <h3 class="portfolio__title">Modern Wbsite</h3>
-                                <p class="portfolio__description">Website adaptable to all devices, with ui components and animated interaction</p>
-                                <a href="#" class="button button--flex button--small portfolio__button">
-                                    Demo
-                                    <i class="uil uil-arrow-right button__icon"></i>
-                                </a>
+                        <div class="card">
+                            <div class="portfolio__content grid">
+                                <img src="assets/img/portfolio22.jpg.png" alt="portfolio__img" class="portfolio__img">
+    
+                                <div class="portfolio__data">
+                                    <h3 class="portfolio__title">Patagonia Website</h3>
+                                    <p class="portfolio__description">Website adaptable to all devices, with ui components and animated interaction, login and cart properties.</p>
+                                    <a href="https://github.com/FelipeAnta/Patagonia-Website" class="button button--flex button--small portfolio__button">
+                                        Demo
+                                        <i class="uil uil-arrow-right button__icon"></i>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                         <!--==================== PORTFOLIO 3 ====================-->
-                        <div class="portfolio__content grid">
-                            <img src="assets/img/portfolio3.jpg" alt="portfolio__img" class="portfolio__img">
-
-                            <div class="portfolio__data">
-                                <h3 class="portfolio__title">Modern Wbsite</h3>
-                                <p class="portfolio__description">Website adaptable to all devices, with ui components and animated interaction</p>
-                                <a href="#" class="button button--flex button--small portfolio__button">
-                                    Demo
-                                    <i class="uil uil-arrow-right button__icon"></i>
-                                </a>
+                        <div class="card">
+                            <div class="portfolio__content grid">
+                                <img src="assets/img/portfolio3.jpg" alt="portfolio__img" class="portfolio__img">
+    
+                                <div class="portfolio__data">
+                                    <h3 class="portfolio__title">Modern Wbsite</h3>
+                                    <p class="portfolio__description">Website adaptable to all devices, with ui components and animated interaction</p>
+                                    <a href="#" class="button button--flex button--small portfolio__button">
+                                        Demo
+                                        <i class="uil uil-arrow-right button__icon"></i>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -606,7 +650,7 @@
 
                 <div class="contact__container container grid">
                     <div>
-                        <div class="container__information">
+                        <div class="contact__information">
                             <i class="uil uil-phone contact__icon"></i>
                             
                             <div>
@@ -614,22 +658,99 @@
                                 <span class="contact__subtitle">+549-2966-465266</span>
                             </div>
                         </div>
+
+                        <div class="contact__information">
+                            <i class="uil uil-envelope contact__icon"></i>
+                            
+                            <div>
+                                <h3 class="contact__title">Email</h3>
+                                <span class="contact__subtitle">felipeantauct@gmail.com</span>
+                            </div>
+                        </div>
+
+                        <div class="contact__information">
+                            <i class="uil uil-map-marker contact__icon"></i>
+                            
+                            <div>
+                                <h3 class="contact__title">Location</h3>
+                                <span class="contact__subtitle">Argentina - Buenos Aires</span>
+                            </div>
+                        </div>
                     </div>
+                    <form action="" class="contact__form grid">
+                        <div class="contact__inputs grid">
+                            <div class="contact__content">
+                                <label for="" class="contact__label">Name</label>
+                                <input type="text" class="contact__input">
+                            </div>
+                            <div class="contact__content">
+                                <label for="" class="contact__label">Email</label>
+                                <input type="email" class="contact__input">
+                            </div>
+                        </div>
+                        <div class="contact__content">
+                            <label for="" class="contact__label">Proyect</label>
+                            <input type="text" class="contact__input">
+                        </div>
+                        <div class="contact__content">
+                            <label for="" class="contact__label">Message</label>
+                            <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
+                        </div>
+
+                        <div>
+                            <a href="#" class="button button--flex">
+                                Send Message
+                                <i class="uil uil-message button__icon"></i>
+                            </a>
+                        </div>
+                    </form>
                 </div>
             </section>
         </main>
 
         <!--==================== FOOTER ====================-->
         <footer class="footer">
-         
+         <div class="footer__bg">
+            <div class="footer__container container grid">
+                <div>
+                    <h1 class="footer__title">Felipe</h1>
+                    <span class="footer__subtitle">Frontend Developer</span>
+                </div>
+
+                <ul class="footer__links">
+                    <li>
+                        <a href="#services" class="footer__link">Services</a>
+                    </li>
+                    <li>
+                        <a href="#portafolio" class="footer__link">Portafolio</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="footer__link">Contactme</a>
+                    </li>
+                </ul>
+
+                <div class="footer__socials">
+                    <a href="https://www.linkedin.com/in/felipe-anta/" target="_blank" class="footer__social">
+                        <i class="uil uil-linkedin"></i>
+                    </a>
+
+                    <a href="https://github.com/FelipeAnta" target="_blank" class="footer__social">
+                        <i class="uil uil-github"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/feli.anta/" target="_blank" class="footer__social">
+                        <i class="uil uil-instagram-alt"></i>
+                    </a>
+                </div>
+            </div>
+            <p class="footer__copy">&#169; PipeCode. All rigth reserved</p>
+         </div>
         </footer>
         
         <!--==================== SCROLL TOP ====================-->
-        
-
-        <!--==================== SWIPER JS ====================-->
-        <script src=""></script>
-
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="uil uil-arrow-up scrollup__icon"></i>
+        </a>
         <!--==================== MAIN JS ====================-->
         <script src="assets/js/main.js"></script>
     </body>
