@@ -99,6 +99,50 @@ body.dark-theme{
   color: var(--first-color);
 }
 
+/*=============Idioma================*/
+.check__idioma{
+  align-items: center;
+  justify-content: center;
+}
+.en{
+  color: var(--title-color);
+  font-size: var(--small-font-size);
+}
+.es{
+  color: var(--title-color);
+  font-size: var(--small-font-size);
+}
+.check{
+  position: relative;
+  width: 35px;
+}
+.check:before{
+  content: '';
+  position: absolute;
+  width: 35px;
+  height: 20px;
+  background-color: var(--first-color-lighter);
+  border-radius: 25px;
+}
+.check:after{
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: rgb(255, 255, 255);
+  border-radius: 25px;
+  transition: 0.25s;
+  border: 2px solid rgb(147, 147, 147);
+  box-sizing: border-box;
+}
+.check:checked:after{
+  left: 15px;
+  border: 2px solid rgb(147, 147, 147);
+}
+.check:checked:before{
+  background: var(--first-color);
+}
+
 /*==================== BASE ====================*/
 * {
   box-sizing: border-box;
