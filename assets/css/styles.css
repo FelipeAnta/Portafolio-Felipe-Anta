@@ -114,7 +114,7 @@ body.dark-theme{
 }
 .check{
   position: relative;
-  width: 35px;
+  width: 39px;
 }
 .check:before{
   content: '';
