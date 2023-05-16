@@ -1102,6 +1102,9 @@ img {
   .testimonial__description{
     text-align: center;
   }
+  .check{
+    width: 40px;
+  }
 }
 
 /* For medium devices */
