@@ -107,11 +107,12 @@ body.dark-theme{
 .en{
   color: var(--title-color);
   font-size: var(--small-font-size);
+  position: relative;
 }
 .es{
   color: var(--title-color);
   font-size: var(--small-font-size);
-  
+  position: relative;
 }
 .check{
   position: relative;
