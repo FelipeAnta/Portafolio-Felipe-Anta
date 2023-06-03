@@ -113,10 +113,12 @@ body.dark-theme{
   color: var(--title-color);
   font-size: var(--small-font-size);
   position: relative;
+  
 }
 .check{
   position: relative;
   width: 45px;
+  cursor: pointer;
 }
 .check:before{
   content: '';
@@ -125,6 +127,7 @@ body.dark-theme{
   height: 20px;
   background-color: var(--first-color-lighter);
   border-radius: 25px;
+  cursor: pointer;
 }
 .check:after{
   content: '';
@@ -136,6 +139,7 @@ body.dark-theme{
   transition: 0.25s;
   border: 2px solid rgb(147, 147, 147);
   box-sizing: border-box;
+  cursor: pointer;
 }
 .check:checked:after{
   left: 15px;
